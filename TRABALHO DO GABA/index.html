@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Assinatura - Responsivo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e6f2f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      width: 600px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .card-header {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .card-header h2 {
+      margin-bottom: 10px;
+      color: #0c6c73;
+    }
+
+    .card-header p {
+      margin-top: 5px;
+      color: gray;
+      font-size: 14px;
+    }
+
+    .garantia {
+      color: #9bcf14;
+      font-weight: bold;
+    }
+
+    .card-body {
+      display: flex;
+      background: #00b3b3;
+      color: white;
+    }
+
+    .preco, .motivos {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .preco h3 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .preco p {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    .botao {
+      margin-top: 20px;
+      background: #c7f464;
+      color: black;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .botao:hover {
+      background: #b3e150;
+    }
+
+    .motivos ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .motivos li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        height: auto;
+        align-items: flex-start;
+        padding: 30px 10px;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .card-body {
+        flex-direction: column;
+      }
+
+      .preco, .motivos {
+        padding: 20px;
+      }
+
+      .preco {
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <h2>Junte-se à nossa comunidade</h2>
+      <p class="garantia">30 dias de garantia de reembolso sem complicações</p>
+      <p>Acesse todos os nossos tutoriais e revisões de código feitas por especialistas. Ideal para quem quer aprender de verdade.</p>
+    </div>
+    <div class="card-body">
+      <div class="preco">
+        <h3>R$29</h3>
+        <p>por mês</p>
+        <p>Acesso completo por menos de R$1 por dia</p>
+        <button class="botao">Assinar</button>
+      </div>
+      <div class="motivos">
+        <h4>Por que nos escolher</h4>
+        <ul>
+          <li>Tutoriais com especialistas</li>
+          <li>Revisões de código por pares</li>
+          <li>Exercícios práticos</li>
+          <li>Acesso ao nosso GitHub</li>
+          <li>Fórum da comunidade</li>
+          <li>Novos vídeos toda semana</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
